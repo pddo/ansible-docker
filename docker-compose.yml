@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  ansible:
+    image: pddo/ansible:2.9.0
+    build: .
+    # environment:
+    #   SSH_KEY_FILE: key_file_name
+    volumes:
+      - .:/ansible
+      - ~/.ssh:/root/.ssh
+    
