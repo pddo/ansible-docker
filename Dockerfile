@@ -67,7 +67,9 @@ RUN set -x && \
 # ENV PYTHONPATH /ansible/lib
 # ENV PATH /ansible/bin:$PATH
 # ENV ANSIBLE_LIBRARY /ansible/library
-# ENV SSH_KEY_FILE ~/.ssh/rsa
+
+## ssh key filename to look for in /root/.ssh/
+# ENV SSH_KEY_FILE_NAME rsa
 
 # WORKDIR /ansible/playbooks
 

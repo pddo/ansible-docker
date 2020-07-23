@@ -5,7 +5,7 @@ services:
     image: pddo/ansible:2.9.0
     build: .
     # environment:
-    #   SSH_KEY_FILE: key_file_name
+    #   SSH_KEY_FILE_NAME: rsa
     volumes:
       - .:/ansible
       - ~/.ssh:/root/.ssh
