@@ -75,6 +75,7 @@ RUN set -x && \
 
 WORKDIR /ansible
 
+COPY ansible.cfg /etc/ansible/
 COPY docker-entrypoint.sh /usr/local/bin/
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]

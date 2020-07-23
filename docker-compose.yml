@@ -2,7 +2,7 @@ version: '3'
 
 services:
   ansible:
-    image: pddo/ansible:2.9.0
+    image: pddo/ansible:2.9.0-p1
     build: .
     # environment:
     #   SSH_KEY_FILE_NAME: rsa
